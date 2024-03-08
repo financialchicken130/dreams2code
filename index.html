@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -88,31 +88,50 @@
   
             /* Specify the background image to be used */ 
             background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-                       rgba(0, 0, 0, 0.5)), url("teachingbw.jpg");
+                       rgba(0, 0, 0, 0.5)), url("teaching.jpg");
             background-size: cover; 
             background-attachment: fixed;
             margin: 0;
+            
+        }
+        body2 {
+            content: ""; 
+            position: absolute; 
+            top: 0px; 
+            right: 0px; 
+            bottom: -15px; 
+            left: 0px; 
+  
+            /* Specify the background image to be used */ 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("boys_and_girls_club.png");
+            background-size: cover; 
+            background-attachment: fixed;
+            margin: 0;
+            
         }
         
         .mission-section {
             /*background: linear-gradient(to right, #001f3f, #4b0082);  */
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
             padding-bottom: 60px;
             padding-top: 10px;
             padding-right: 60px;
             padding-left: 60px;
             margin-top: 90px; /* Overlaps with the header section */
-            border: 5px solid white;
+            
             
             
         }
 
+       
+
         .services-section {
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
             padding: 60px;
-            margin-top: 700px; /* Overlaps with the header section */
+            margin-top: 20px; /* Overlaps with the header section */
             border: 5px solid white;
             
         }
@@ -160,6 +179,18 @@
         header h1 code {
             color: red;
             font-size: 1.5em;
+            display: inline-block;
+            animation: glow 2s infinite alternate;
+        }
+        header h1 every {
+            color: blue;
+            font-size: 1.25em;
+            display: inline-block;
+            animation: glow 2s infinite alternate;
+        }
+        header h1 gb {
+            color: orange;
+            font-size: 1.25em;
             display: inline-block;
             animation: glow 2s infinite alternate;
         }
@@ -243,7 +274,21 @@
       style="width: 40%; object-fit: cover;animation: slideIn 2s east-in-out; padding-top: 30px;"
     />
     </div>
+</body>
+<body2>
     
+</body2>
+
+<body>  
+    <header>
+        <div>
+            <h1>
+           
+                <span style:>Forging a new generation of <gb>aspiring</gb> new coders</span><br>
+                <span>because <every>every</every> voice counts.</span>
+            </h1>
+        </div>
+    </header>
     <div class="services-section" style="text-align: center;">
         <h2 style=" animation: slideIn 2s ease-in-out forwards; font-size: 60px;">Our Services</h2>
         <div class="card m-2 col-lg p-0 " style="width: 18rem"></div>
