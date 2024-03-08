@@ -1,0 +1,299 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Dreams2Code</title>
+    <style>
+        .divider {
+          width: 100%;
+          height: 2rem;
+          background-color: rgba(0, 0, 0, 0.1);
+          border: solid rgba(0, 0, 0, 0.15);
+          border-width: 1px 0;
+          box-shadow:   
+            inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+            inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+        }
+        .appear-on-scroll {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+
+        .appear-on-scroll.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+                                                                                        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        nav div a {
+            padding: 8px 12px;
+            color: white;
+            border-radius: 0px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header {
+            position: relative;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            opacity: 0.8;
+            position: relative;
+            z-index: 1;
+        }
+        hr {
+            height: 5px;
+        }
+
+        body {
+            content: ""; 
+            position: absolute; 
+            top: 0px; 
+            right: 0px; 
+            bottom: 0px; 
+            left: 0px; 
+  
+            /* Specify the background image to be used */ 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("teachingbw.jpg");
+            background-size: cover; 
+            background-attachment: fixed;
+            margin: 0;
+        }
+        
+        .mission-section {
+            /*background: linear-gradient(to right, #001f3f, #4b0082);  */
+            background-color: black;
+            color: white;
+            padding-bottom: 60px;
+            padding-top: 10px;
+            padding-right: 60px;
+            padding-left: 60px;
+            margin-top: 90px; /* Overlaps with the header section */
+            border: 5px solid white;
+            
+            
+        }
+
+        .services-section {
+            background-color: black;
+            color: white;
+            padding: 60px;
+            margin-top: 700px; /* Overlaps with the header section */
+            border: 5px solid white;
+            
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(60px); /* Initial position off-screen */
+            animation: slideIn 1.5s ease-in-out forwards; /* Animation for sliding in */
+        }
+        
+        
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #00f, 0 0 30px #0f0;
+            }
+            50% {
+                text-shadow: 0 0 20px #fff, 0 0 30px #00f, 0 0 60px #0f0;
+            }
+            100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #00f, 0 0 30px #0f0;
+            }
+        }
+
+        header h1 span {
+            display: inline-block;
+            animation: glow 2s infinite alternate;
+        }
+
+        header h1 code {
+            color: red;
+            font-size: 1.5em;
+            display: inline-block;
+            animation: glow 2s infinite alternate;
+        }
+
+        header h1 span2 {
+            color: blue;
+            font-size: 1.5em;
+            display: inline-block;
+            animation: glow 2s infinite alternate;
+            font-family:cursive;
+        }
+        header h1 span3 {
+            color: blue;
+            font-size: 1.2em;
+            display: inline-block;
+            animation: glow 2s infinite alternate;
+            font-family:cursive;
+        }
+        header h1 span4 {
+            color: blue;
+            font-size: 1em;
+            display: inline-block;
+            animation: glow 2s infinite alternate;
+            font-family:cursive;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <a href="websiteversion1.htm">Dreams2Code</a>
+        </div>
+        <div>
+            <div>
+                <a href="meet-the-team.htm">Leadership</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdw40--hwUHmdXSaC-blAXDJyLxotmFSf--7cJtzwj87dJbHQ/viewform">Volunteer</a>
+                <a href="Events">Events</a>
+                <a href="Classes">Classes</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSct1-dnCOPNMD8DrjGt8N4zRiJABT_SYSOIGbpefejZ8raNZg/viewform">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div>
+            <h1>
+           
+                <span>Bridging the digital divide,</span><br>
+                <span>one line of <code>code</code> at a time.</span>
+            </h1>
+        </div>
+    </header>
+
+    <div class="mission-section" style="text-align: center;">
+        <h2 style=" animation: slideIn 2s ease-in-out forwards; font-size: 60px;">Our Mission</h2>
+        <p style=" animation: slideIn 2s ease-in-out forwards;">
+            Dreams2Code is a non-profit organization with the vision of transforming our passion for computer science into education for underserved communities. Together, we aspire to spread this passion for technology through hosting hackathons, free computing classes, and aiding local businesses with digital needs. Dreams2Code strives to empower communities, fostering a more inclusive and technologically vibrant future.
+
+
+        </p>
+        <img
+      alt="Coding"
+      class="card-img-top"
+      src="logo.png"
+      style="width: 40%; object-fit: cover;animation: slideIn 2s east-in-out; padding-top: 30px;"
+    />
+    </div>
+    
+    <div class="services-section" style="text-align: center;">
+        <h2 style=" animation: slideIn 2s ease-in-out forwards; font-size: 60px;">Our Services</h2>
+        <div class="card m-2 col-lg p-0 " style="width: 18rem"></div>
+        <img
+        alt="Runbier teaching kids to code"
+        class="card-img-top"
+        src="boys_and_girls_club.png"
+        style="width: 40%; object-fit: cover; animation: slideIn 2s east-in-out; border: 10px solid white; "
+        
+      />
+
+      <div class="card-body">
+        <h5 class="card-title" style="font-size: 20px">Computing Classes</h5>
+        <p class="card-text" style="padding-bottom: 30px; margin-left: 60px; margin-right: 60px">
+          We teach children ages 10-14 computer science at local
+          libraries. Students start from the basics and slowly learn how
+          to create amazing projects using advanced programming concepts. At it's core, this consists of a 10-week training course, but can be expanded if time permits. Sign up today!
+        </p>
+      </div>
+      <img
+      alt="Coding"
+      class="card-img-top"
+      src="company.jpg"
+      style="width: 40%; object-fit: cover;animation: slideIn 2s east-in-out; border: 10px solid white;"
+      
+    />
+    <div class="card-body">
+      <h5 class="card-title"style="font-size: 20px;">Helping Local Businesses</h5>
+      <p class="card-text" style="padding-bottom: 30px; margin-left: 60px; margin-right: 60px">    
+        We help local businesses in the Central Jersey area with their
+        digital needs. We create websites, mobile apps, and help with
+        digital marketing. This is all preformed through our developer department, and led by our Director of Technology.
+      </p>
+     
+    </div>
+    <img
+    alt="Coding"
+    class="card-img-top"
+    src="https://miro.medium.com/v2/resize:fit:1200/1*P_H_UpQahH0juwQpXWXnpQ.jpeg"
+    style="width: 40%; object-fit: cover;animation: slideIn 2s east-in-out; border: 10px solid white;"
+    
+  />
+  <div class="card-body">
+    <h5 class="card-title"style="font-size: 20px">Hackathons and Other Events</h5>
+    <p class="card-text" style="margin-left: 60px; margin-right: 60px">
+        We plan to host local hackathons and other events to bring the
+        community together. This would include partnerships with local schools, and inviting possible sponsors. Please stay tuned for details.
+    </p>
+  </div>
+</body>
+
+</html>
+
