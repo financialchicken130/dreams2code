@@ -34,6 +34,7 @@
             padding: 0;
             font-family: 'Poppins', sans-serif;
             overflow-x: hidden;
+            background:black;
         }
 
         nav {
@@ -63,6 +64,7 @@
         }
 
         header {
+            
             position: relative;
             height: 80vh;
             display: flex;
@@ -105,9 +107,11 @@
             /* Specify the background image to be used */ 
             background-image: linear-gradient(rgba(0, 0, 0, 0.5),
                        rgba(0, 0, 0, 0.5)), url("boys_and_girls_club.png");
+                       
             background-size: cover; 
             background-attachment: fixed;
             margin: 0;
+            
             
         }
         
@@ -135,7 +139,18 @@
             border: 5px solid white;
             
         }
+        .column {
+  float: left;
+  width: 32.2%;
+  padding: 5px;
+}
 
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
         h1 {
             font-size: 3em;
             margin: 0;
@@ -184,6 +199,18 @@
         }
         header h1 every {
             color: blue;
+            font-size: 1.25em;
+            display: inline-block;
+            animation: glow 2s infinite alternate;
+        }
+        header h1 thousand {
+            color: magenta;
+            font-size: 1.25em;
+            display: inline-block;
+            animation: glow 2s infinite alternate;
+        }
+        header h1 single {
+            color: yellow;
             font-size: 1.25em;
             display: inline-block;
             animation: glow 2s infinite alternate;
@@ -261,7 +288,8 @@
     </header>
 
     <div class="mission-section" style="text-align: center;">
-        <h2 style=" animation: slideIn 2s ease-in-out forwards; font-size: 60px; margin-bottom: -10px;">Our Mission</h2>
+        <h2 style=" animation: slideIn 2s ease-in-out forwards; font-size: 60px; margin-bottom: -10px; margin-top: 20px">Our Mission</h2>
+        <hr style="width: 400px; color:red; height:5px; background-color: red; animation: slideIn 2s ease-in-out forwards" size = "40px">
         <p style=" animation: slideIn 2s ease-in-out forwards; font-size: 23px">
             Dreams2Code is a non-profit organization with the vision of transforming our passion for computer science into education for underserved communities. Together, we aspire to spread this passion for technology through hosting hackathons, free computing classes, and aiding local businesses with digital needs. Dreams2Code strives to empower communities, fostering a more inclusive and technologically vibrant future.
 
@@ -282,17 +310,54 @@
 </body2>
 
 <body>  
-    <header>
+
+    <header style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(boys_and_girls_club2.png); background-size: cover; background-attachment: fixed; margin-bottom: -90px;">
         <div>
             <h1>
            
-                <span style:>Forging a new generation of <gb>aspiring</gb> newm coders</span><br>
+                <span style:>Forging a new generation of <gb>aspiring</gb> new coders</span><br>
                 <span>because <every>every</every> voice counts.</span>
             </h1>
         </div>
     </header>
+<body>
+
+    <div class="mission-section" style="text-align: center;">
+        <h2 style=" animation: slideIn 2s ease-in-out forwards; font-size: 60px; margin-bottom: -10px; margin-top: 20px">Why Computer Science?</h2>
+        <hr style="width: 400px; color:blue; height:5px; background-color: blue; animation: slideIn 2s ease-in-out forwards; margin-bottom: 30px" size = "40px">
+        <div class="row">
+            <div class="column">
+              <img src="boys_and_girls_club.png" alt="Snow" style="width:100%; border-radius: 450000px">
+              <margin-left:20px></margin-left:4px>
+            </div>
+            <div class="column">
+              <img src="boys_and_girls_club.png" alt="Forest" style="width:100%;border-radius: 450000px">
+            </div>
+            <div class="column">
+              <img src="boys_and_girls_club.png" alt="Mountains" style="width:100%; border-radius: 450000px">
+            </div>
+          </div>
+    </div>
+
+
+    
+    
+        <body style="background: transparent">  
+        <header style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url(teaching.jpg); background-size: cover; background-attachment: fixed; margin-bottom: -20px;">
+            <div>
+                <h1>
+               
+                    <span style="font-size: 0.95em">"A journey of a <thousand>thousand</thousand> miles</span><br>
+                    <span style="font-size: 0.95em">begins with a <single>single</single> step."</span><br><span> - Lao Tzu</span>
+                </h1>
+            </div>
+        </header>
+ 
     <div class="services-section" style="text-align: center;">
-        <h2 style=" animation: slideIn 2s ease-in-out forwards; font-size: 60px;">Our Services</h2>
+        <h2 style=" animation: slideIn 2s ease-in-out forwards; font-size: 60px; margin-bottom: -20px">Our Services</h2>
+        <hr style="width: 500px; color:orange; height:5px; background-color: orange; margin-bottom: 40px" size = "40px">
         <div class="card m-2 col-lg p-0 " style="width: 18rem"></div>
         <img
         alt="Runbier teaching kids to code"
